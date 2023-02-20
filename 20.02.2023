@@ -1,0 +1,106 @@
+//#include <iostream>
+//#include <vector>
+//
+//using namespace std;
+//int main()
+//
+//{
+//	vector <int> num{ 1,2,3,1,2 };
+//	int i = 0;
+//	do {
+//		if (num[i] == 1)cout << "atradu ";
+//
+//		i++;
+//
+//
+//
+//
+//
+//
+//	} while (i < num.size());
+//	i = 0;
+//	do {
+//		if (num[i] == 4)cout << "atradu ";
+//
+//		i++;
+//
+//
+//
+//
+//
+//
+//	} while (i < num.size());
+
+
+
+
+//}
+
+//#include <iostream>
+//#include <vector>
+//using namespace std;
+//
+//
+//
+//int main()/*{
+//int i = 0;
+//
+////	vector <string> ctr { "USA", "UK", "CHINA", "INDIA", "CANADA", "AUSTRALIA" };
+////	vector <string> nums{ "1", "44", "86", "91", "1", "61"};
+////	cout << "Enter your phone code my brotha" << endl;
+////	string c1;
+////	cin >> c1;
+//
+//
+//	do {
+//		if (nums[i] == c1)cout << ctr[i]<<" ";
+//		i++;
+//
+//
+//	} while (i < nums.size());
+//	 
+//
+//
+//
+//
+//
+//
+//}*/
+
+
+
+
+#include <iostream>
+#include <vector>
+using namespace std;
+
+
+
+int main()
+{
+	int i = 0;
+
+	string yes = "Jā";
+	bool a = false;
+	vector <string> names{ "Latvijas Proklamēšanas diena", "Neatkarības iegūšanas diena"};
+	vector <string> nums{ "18. novembris" , "4. maijs"};
+	cout << "Vai tu gribi redzēt foršus svētkus?" << endl; cin >> yes; 
+	do {
+		if (yes == "yes") {
+
+			cout << "Rekur ir svētki, kurus Jūs varēsiet izbaudīt  - " << names[i] << nums[i]; a = true;
+
+		}
+		
+
+		
+
+
+		i++;
+
+	} while (i < names.size());
+	if (a == false) cout << "Visu labu!" << endl;
+
+	
+	
+}
