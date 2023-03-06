@@ -1,0 +1,214 @@
+# Helikopter
+Description
+#include <iostream>
+#include <vector>
+using namespace std;
+
+double sum()
+
+{
+	double num1, num2;
+	cout << "ievadi 2 sk" << endl;
+	cin >> num1 >> num2;
+	return num1 + num2;
+}
+double quadr()
+{
+	double num1;
+	cout << "ievadi 1 sk" << endl;
+	cin >> num1;
+	return num1 * num1;
+
+
+
+
+
+}
+void average()
+{
+	vector<double>n { 1, 2, 3, 4, 5 };
+	cout << (n[0] + n[1] + n[2] + n[3] + n[4]) / 5;
+}
+void even() {
+	vector<int> n{ 1,2,3,4,5,6,7,8,9 };
+	int i = 0;
+	do {
+		if (n[i] % 2 == 0)cout << n[i]<<" ";
+			i++;
+
+
+	} while (i < n.size());
+
+
+
+
+
+}
+
+void prime()
+	{
+
+
+	vector <int> p {2, 3, 7, 11, 13, 17, 19};
+	int num1;
+	cout << "Ievadi 1 sk ZEM 20 kas ir pozitivs" << endl;
+	cin >>num1;
+	int i = 0; bool a = false;
+	do {
+		if (num1 == p[i]) { cout << "is prime"; a = true; }
+		i++;
+	} while (i < p.size());
+	if (a == false)cout << "false";
+
+
+	}
+
+void ss()
+{
+	vector <int> s{ 1,2,3,4,5,6 };
+	int i = 0, sum = 0;
+	do {
+		cout << s[i] * s[i] << " ";
+		sum = sum + s[i] * s[i];
+		i++;
+
+
+
+
+	}while (i < s.size());
+
+	cout << sum;
+
+
+}
+
+void poz() {
+
+	vector <int> pozit{ 1,-2,3,-4,5 };
+	int i = 0;
+	do {
+		if (pozit[i] > 0) cout << pozit[i]<< " ";
+
+		i++;
+
+	} while (i < pozit.size());
+
+
+}
+
+void neg() {
+
+	vector <int> negat{ 1,-2,3,-4,5 };
+	int i = 0;
+	do {
+		if (negat[i] < 0) cout << negat[i] << " ";
+
+		i++;
+
+	} while (i < negat.size());
+
+
+}
+
+void vards()
+{
+	string var = "Hello";
+	int i = var.size();
+
+
+
+	do {
+		cout << var[i];
+		i--;
+
+	} while (i != -1);
+
+
+
+}
+void carcar()
+{
+	string var = "racecar";
+	if (var[0] == var[6] && var[1] == var[5] && var[2] == var[4])cout << "palindrome";
+
+
+}
+vector<int> a(vector<int>k)
+{
+	return k;
+
+
+}
+void diff ()
+{
+	double num;
+	double num2;
+	cout << "Enter 2 numbers";
+	cin >> num;
+	cin >> num2;
+	cout << num - num2 << endl;
+
+
+
+
+
+}
+void doubletrouble()
+{
+	double num;
+	cout << "Enter numbir plez";
+	cin >> num;
+	cout << num * 2 << endl;
+
+
+
+
+
+
+}
+
+void 😀()
+{
+
+
+	vector<int> n{ 1,2,3,4,5,6,7,8 };
+	int i = 0;
+	do {
+		if (n[i] % 2 != 0)cout << n[i] << " ";
+		i++;
+
+
+	} while (i < n.size());
+
+
+
+
+
+}
+
+void 😅()
+{
+cout << "Stnemdnamma" << endl;
+}
+int main()
+{
+	/*cout << sum();*/
+	/*average();*/
+	/*even();*/
+	/*ss();*/
+	/*poz();*/
+	/*neg();*/
+	/*vards();*/
+	/*vector<int> k{ 1, 2, 3 };
+	cout << a(k)[0] << a(k)[1] << a(k)[2];*/
+	/*diff();*/
+	/*doubletrouble();*/
+	/*doubletrouble();*/
+	/*😀();*/
+	😅();
+	🤮
+	😎
+	🚓
+	🤐
+	💩
+}
