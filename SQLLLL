@@ -1,0 +1,69 @@
+--create
+CREATE TABLE WEATHERSCH(
+	num INTEGER PRIMARY KEY,
+	day TEXT NOT NULL,
+	monthw TEXT NOT NULL,
+	date INTEGER NOT NULL,
+	cond TEXT NOT NULL,
+	tempr INTEGER NOT NULL
+);
+
+--insert
+INSERT INTO WEATHERSCH VALUES(1, 'Monday', ' May', 1, 'Sunny', 17);
+INSERT INTO WEATHERSCH VALUES(2, 'Tuesday', '   May   ', 2, 'Windy', 18);
+INSERT INTO WEATHERSCH VALUES(3, 'Wednesday', 'May', 3, 'Snow', 19);
+INSERT INTO WEATHERSCH VALUES(4, 'Thursday', 'May', 4, 'Sunny', 16);
+INSERT INTO WEATHERSCH VALUES(5, 'Friday', 'May', 5, 'Windy', 23);
+INSERT INTO WEATHERSCH VALUES(6, 'Saturday', 'May', 6, 'Sunny', 28);
+INSERT INTO WEATHERSCH VALUES(7, 'Sunday', 'May', 7, 'Cold', 12);
+INSERT INTO WEATHERSCH VALUES(8, 'Monday', 'May', 8, 'Rainy', 15);
+INSERT INTO WEATHERSCH VALUES(9, 'Tuesday', 'May', 9, 'Snow', 2);
+INSERT INTO WEATHERSCH VALUES(10, 'Wednesday', 'May', 10, 'Sunny', 18);
+INSERT INTO WEATHERSCH VALUES(11, 'Thursday', 'May', 11, 'Sunny', 24);
+INSERT INTO WEATHERSCH VALUES(12, 'Friday', 'May', 12, 'Snow', 1);
+INSERT INTO WEATHERSCH VALUES(13, 'Saturday', 'May', 13, 'Sunny', 19);
+INSERT INTO WEATHERSCH VALUES(14, 'Sunday', 'May', 14, 'Windy', 14);
+
+
+--fetch
+SELECT* FROM WEATHERSCH;
+SELECT* FROM WEATHERSCH WHERE tempr > 0;
+SELECT* FROM WEATHERSCH WHERE day = 'Tuesday' AND cond = 'Rainy';
+SELECT MIN(tempr) FROM WEATHERSCH;
+SELECT MAX(tempr) FROM WEATHERSCH;
+SELECT AVG(tempr) FROM WEATHERSCH;
+SELECT COUNT(cond) FROM WEATHERSCH WHERE cond = 'Snow';
+DELETE FROM WEATHERSCH WHERE cond = 'Sunny';
+SELECT* FROM WEATHERSCH;
+
+
+
+
+CREATE TABLE JOBAJOB(
+	mainID INTEGER PRIMARY KEY,
+	employeeID INTEGER NOT NULL,
+	first_name TEXT NOT NULL,
+	last_name TEXT NOT NULL,
+	customer_id INTEGER NOT NULL,
+	customer_name TEXT NOT NULL,
+	city TEXT NOT NULL
+);
+
+
+INSERT INTO JOBAJOB VALUES(1, 1, 'Thomas (Neo)', 'Anderson', 1, 'Jewelery Store', 'London');
+INSERT INTO JOBAJOB VALUES(2, 1, 'Thomas (Neo)', 'Anderson', 2, 'Bakery', 'London');
+INSERT INTO JOBAJOB VALUES(3, 1, 'Thomas (Neo)', 'Anderson', 3, 'Cafe', 'London');
+INSERT INTO JOBAJOB VALUES(4, 1, 'Thomas (Neo)', 'Anderson', 4, 'Restaurant', 'London');
+INSERT INTO JOBAJOB VALUES(5, 2, 'Agent', 'Smith', 1, 'Jewelery Store', 'Cardiff');
+INSERT INTO JOBAJOB VALUES(6, 2, 'Agent', 'Smith', 2, 'bakery', 'Cardiff');
+INSERT INTO JOBAJOB VALUES(7, 2, 'Agent', 'Smith', 3, 'Cafe', 'Cardiff');
+INSERT INTO JOBAJOB VALUES(8, 2, 'Agent', 'Smith', 4, 'Restaurant', 'Cardiff');
+
+
+
+SELECT* FROM JOBAJOB;
+SELECT* FROM JOBAJOB WHERE customer_name = 'Bakery';
+SELECT* FROM JOBAJOB WHERE customer_id = 4 AND last_name = 'Anderson';
+SELECT MIN(customer_id) FROM JOBAJOB;
+SELECT MAX(customer_id) FROM JOBAJOB;
+SELECT* FROM JOBAJOB WHERE city = 'London' AND first_name = 'Anderson';
